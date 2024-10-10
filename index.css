@@ -1,0 +1,137 @@
+/* General reset and body styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background: url(../images/pattern-background-mobile.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(246, 68%, 88%);
+}
+
+/* Container and Card styling */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* Hero image styling */
+.card img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* Text and headings */
+.text h2 {
+  font-size: 24px;
+  margin-top: 20px;
+  color: hsl(223, 82%, 40%);
+}
+
+.text p {
+  margin: 15px 0;
+  color: hsl(224, 23%, 55%);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Plan Section */
+.plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.plan img {
+  width: 50px;
+}
+
+.plan p {
+  margin-left: 15px;
+  font-size: 16px;
+  color: hsl(223, 47%, 23%);
+  line-height: 1.6;
+}
+
+.plan p br {
+  margin-bottom: 5px;
+}
+
+span a {
+  display: inline-block;
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+  margin-top: 5px;
+}
+
+/* Button Styling */
+button {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  border: none;
+  border-radius: 40px;
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: hsl(245, 75%, 65%);
+}
+
+button:active {
+  background-color: hsl(245, 75%, 42%);
+}
+
+/* Cancel text */
+.card p {
+  margin-top: 15px;
+  color: hsl(224, 23%, 55%);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.card p:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 48rem) {
+  body {
+    background: url(../images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: hsl(246, 68%, 88%);
+    width: 100%;
+  }
+}
